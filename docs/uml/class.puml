@@ -1,0 +1,22 @@
+@startuml ClassDiagram
+
+class User {
+First Name
+Last Name
+Login
+Password
+ID
+Login()
+AddColor()
+SearchColors()
+}
+
+class Colors {
+ID
+Name
+UserID
+}
+
+User -> Colors : uses
+
+@enduml
