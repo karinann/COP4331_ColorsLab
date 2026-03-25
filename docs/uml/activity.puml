@@ -1,0 +1,26 @@
+@startuml
+
+start
+
+repeat :Enter Username and Password;
+backward:Show Invalid Credentials Error;
+repeat while (Valid Credentials?) is (No)
+->Yes;
+
+repeat
+switch (Choose Action)
+case ()
+:Search Color;
+- Show Color
+case ()
+:Add Color;
+- Save Color
+case ()
+:Log Out;
+end
+endswitch
+
+repeat while (Continue Adding/Searching?) is (Yes)
+
+
+@enduml
