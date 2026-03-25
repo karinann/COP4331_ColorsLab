@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+
+:User: --> (LogIn)
+"Log In" as (LogIn)
+
+rectangle LoggedIn {
+"Log Out" as (LogOut)
+"Search for Color" as (Search)
+"Add Color" as (Add)
+}
+
+(LogIn) --> (LogOut)
+(LogIn) --> (Search)
+(LogIn) --> (Add)
+
+(Search) .> (Add) : «extend»
+
+@enduml
