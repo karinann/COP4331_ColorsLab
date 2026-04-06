@@ -1,5 +1,5 @@
-const urlBase = 'http://karinann.site/LAMPAPI';
-const extension = 'php';
+const urlBase = "http://karinann.site/LAMPAPI";
+const extension = "php";
 
 let userId = 0;
 let firstName = "";
@@ -21,7 +21,7 @@ function doLogin()
 //	var tmp = {login:login,password:hash};
 	let jsonPayload = JSON.stringify( tmp );
 	
-	let url = urlBase + '/Login.' + extension;
+	let url = urlBase + "/Login." + extension;
 
 	let xhr = new XMLHttpRequest();
 	xhr.open("POST", url, true);
@@ -116,7 +116,7 @@ function addColor()
 	let tmp = {color:newColor,userId,userId};
 	let jsonPayload = JSON.stringify( tmp );
 
-	let url = urlBase + '/AddColor.' + extension;
+	let url = urlBase + "/AddColor." + extension;
 	
 	let xhr = new XMLHttpRequest();
 	xhr.open("POST", url, true);
@@ -149,7 +149,7 @@ function searchColor()
 	let tmp = {search:srch,userId:userId};
 	let jsonPayload = JSON.stringify( tmp );
 
-	let url = urlBase + '/SearchColors.' + extension;
+	let url = urlBase + "/SearchColors." + extension;
 	
 	let xhr = new XMLHttpRequest();
 	xhr.open("POST", url, true);
