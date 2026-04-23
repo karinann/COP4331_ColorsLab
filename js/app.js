@@ -1,5 +1,5 @@
 // For testing purposes, we export the Express app instance. In production, you would typically start the server separately.
-import express, { json } from "express";
+const express = require("express");
 const app = express();
 app.use(json());
 
