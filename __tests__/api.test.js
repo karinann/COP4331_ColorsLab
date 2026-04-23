@@ -1,5 +1,5 @@
-import request from "supertest";
-import app from "../js/app"; // your Express app
+const request = require("supertest");
+const app = require("../js/app");
 
 test("GET /colors returns 200 and JSON array", async () => {
   const res = await request(app).get("/colors");

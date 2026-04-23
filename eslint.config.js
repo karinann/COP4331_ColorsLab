@@ -24,7 +24,8 @@ export default [
         describe: "readonly",
         beforeEach: "readonly",
         afterEach: "readonly",
-        jest: "readonly"
+        jest: "readonly",
+        require: "readonly"
       }
     },
 

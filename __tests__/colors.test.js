@@ -1,4 +1,4 @@
-import { buildColorPayload } from "../js/code.js";
+const { buildColorPayload } = require("../js/code.js");
 
 test("payload contains the correct color", () => {
   const result = JSON.parse(buildColorPayload("red", 1));
