@@ -113,7 +113,7 @@ function addColor()
 	let newColor = document.getElementById("colorText").value;
 	document.getElementById("colorAddResult").innerHTML = "";
 
-	let tmp = {color:newColor,userId,userId};
+	let tmp = {color:newColor,userId:userId};
 	let jsonPayload = JSON.stringify( tmp );
 
 	let url = urlBase + "/AddColor." + extension;
@@ -181,5 +181,12 @@ function searchColor()
 	{
 		document.getElementById("colorSearchResult").innerHTML = err.message;
 	}
+
+	// For testing purposes, we export the buildColorPayload function. In production, this would typically be part of your application logic.
+	function buildColorPayload(color, userId) {
+		return JSON.stringify({ color: color, userId: userId });
+	}
+
+	module.exports = { buildColorPayload };
 	
 }
