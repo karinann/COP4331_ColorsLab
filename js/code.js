@@ -190,6 +190,6 @@ function buildColorPayload(color, userId) {
 
 module.exports = { buildColorPayload };
 
-if (typeof module !== 'undefined') {
+if (typeof module !== "undefined") {
 	module.exports = { addColor, searchColor, buildColorPayload };
 }
