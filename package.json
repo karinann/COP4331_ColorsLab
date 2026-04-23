@@ -1,6 +1,9 @@
 {
     "type": "module",
     "scripts": {
+        "lint:js": "eslint .",
+        "lint:css": "stylelint \"**/*.css\"",
+        "lint:html": "htmlhint \"**/*.html\"",
         "test": "jest"
     },
     "devDependencies": {
