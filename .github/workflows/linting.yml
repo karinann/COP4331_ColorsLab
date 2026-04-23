@@ -28,3 +28,6 @@ jobs:
 
       - name: Lint HTML
         run: npm run lint:html
+
+      - name: Run tests
+        run: npm test
