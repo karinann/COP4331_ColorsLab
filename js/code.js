@@ -188,5 +188,9 @@ function searchColor()
 	}
 
 	module.exports = { buildColorPayload };
+
+	if (typeof module !== 'undefined') {
+		module.exports = { addColor, searchColor, buildColorPayload };
+	}
 	
 }
