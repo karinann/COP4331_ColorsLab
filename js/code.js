@@ -180,17 +180,16 @@ function searchColor()
 	catch(err)
 	{
 		document.getElementById("colorSearchResult").innerHTML = err.message;
-	}
+	}	
+}
 
-	// For testing purposes, we export the buildColorPayload function. In production, this would typically be part of your application logic.
-	function buildColorPayload(color, userId) {
-		return JSON.stringify({ color: color, userId: userId });
-	}
+// For testing purposes, we export the buildColorPayload function. In production, this would typically be part of your application logic.
+function buildColorPayload(color, userId) {
+	return JSON.stringify({ color: color, userId: userId });
+}
 
-	module.exports = { buildColorPayload };
+module.exports = { buildColorPayload };
 
-	if (typeof module !== 'undefined') {
-		module.exports = { addColor, searchColor, buildColorPayload };
-	}
-	
+if (typeof module !== 'undefined') {
+	module.exports = { addColor, searchColor, buildColorPayload };
 }

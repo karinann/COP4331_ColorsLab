@@ -1,6 +1,6 @@
 const { buildColorPayload } = require('../js/code.js');
 
-test('payload contains the correct color', require('../js/code.js') => {
+test('payload contains the correct color', () => {
   const result = JSON.parse(buildColorPayload('red', 1));
   expect(result.color).toBe('red');
 });
